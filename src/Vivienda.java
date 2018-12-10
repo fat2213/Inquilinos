@@ -105,6 +105,11 @@ public class Vivienda extends javax.swing.JFrame {
 
         OK.setFont(new java.awt.Font("Century Gothic", 1, 18)); // NOI18N
         OK.setText("V E R I F I C A R");
+        OK.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                OKActionPerformed(evt);
+            }
+        });
 
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
         getContentPane().setLayout(layout);
@@ -253,6 +258,30 @@ public class Vivienda extends javax.swing.JFrame {
         
        
     }//GEN-LAST:event_piscinaActionPerformed
+
+    private void OKActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_OKActionPerformed
+String Tipodeviviendas=(String) TipoViviendas.getSelectedItem();
+String ID=(String)id.getText();
+int ID_1= Integer.parseInt(ID);
+String Tamaño=(String)tamaño.getText();
+int Tamaño_1=Integer.parseInt(Tamaño);
+String PRECIOMENSUAL=(String)PrecioMensual.getText();
+double PRECIOMENSUAL1=Double.parseDouble(PRECIOMENSUAL);
+String Amoblado=(String)amoblado.getSelectedItem();
+String Añodeconstruccion=AñoConstruccion.getText();
+int Añodeconstruccion1=Integer.parseInt(Añodeconstruccion);
+String PISCINA=(String)piscina.getSelectedItem();
+String Verificar=OK.getText();
+
+//Chalet c1=new Chalet()
+
+
+
+
+        
+        
+        
+    }//GEN-LAST:event_OKActionPerformed
 
     /**
      * @param args the command line arguments
