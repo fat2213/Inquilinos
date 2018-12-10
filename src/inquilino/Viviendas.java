@@ -53,9 +53,17 @@ public class Viviendas {
         this.id=id;
         this.metroscuadrados= metroscuadrados;
         this.preciomensual=preciomensual;
-        this.inquilino=inquilino;
-        
-        
+        this.inquilino=inquilino;}
+    
+    
+    public double mas(){
+        double R;
+        R = metroscuadrados / 65 * 100;
+        R = R + metroscuadrados;
+        return R;
     }
     
+    
 }
+
+
